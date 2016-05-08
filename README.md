@@ -1,13 +1,14 @@
 # 5-Year-Harvest-Plan-for-Honey-Prawn-OR
-INTRODUCTION
 
-Purpose
+#INTRODUCTION
+
+##Purpose
 
 The purpose of this report is to provide Deluxe Seafoods Ltd. a 5-year harvest plan for the honey-prawn stocks in each of the 5 zones across the 5-years. This plan is to be optimal with respect to the net present value of the operation. 
 
 In addition, a case for the procurement of an 11th vessel will be investigated. As such, an alternative NPV-optimal harvest plan for a fleet of 11 vessels will also be devised.  
 
-Method
+##Method
 
 The information used in this report is provided by Deluxe Seafoods Ltd., the Haruchai Government and the Haruchai Department of Primary Industries. This information was used to create the generalised mixed integer programming model for the NPV-optimal harvest plan to aid in the decision making for the upcoming 5 years. 
 
