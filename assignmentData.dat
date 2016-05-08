@@ -1,0 +1,56 @@
+/*********************************************
+ * OPL 12.6.3.0 Data
+ * Author: Baturay
+ * Creation Date: 11 Nis 2016 at 17:05:09
+ *********************************************/
+
+// Establish connection with xls file
+SheetConnection 
+	file("MXB332.xlsx");
+	
+/*********************************************
+ ***** READ DATA ******************************
+ *********************************************/
+ 	
+ // Vector parameter with annual growth factor for zones
+ GrowthFactor
+ 	from SheetRead (file, "Data!B3:F3");
+ 
+ // Vector parameter with maximum sustainable stock level(kg) for zones
+ MaxSustainableLevel
+ 	from SheetRead (file, "Data!B4:F4");
+ 
+ // Vector parameter with operating expenditures for zones	
+ OperatingExpenditures
+ 	from SheetRead (file, "Data!B11:F11");
+ 
+Revenue
+ 	from SheetRead (file, "Data!B6");
+
+AnnualHarvestFee
+	from SheetRead (file, "Data!B7");
+
+VesselCapacity
+ 	from SheetRead (file, "Data!B8");
+
+VesselCount
+ 	from SheetRead (file, "Data!B9");
+ 
+ /*********************************************
+ ***** WRITE RESULTS *************************
+ ********************************/
+
+
+HarvestOutputV
+    to SheetWrite (file, "Results!C11:G15");
+    
+VesselAllocationOutputV
+    to SheetWrite (file, "Results!C4:G8");
+    
+CurrentStocksV
+    to SheetWrite (file, "Results!C18:G22");
+ 
+/*NpvBreakdownV
+ 	to SheetWrite (file,"Results!C27:G31");
+ 	*/
+ 
